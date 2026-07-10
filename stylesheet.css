@@ -161,12 +161,6 @@ a {
     color: #fff;
 }
 
-@media (max-width: 1000px) {
-    .hide {
-        display: none;
-    }
-}
-
 .card {
     background-color: #232323;
     width: 150px;
@@ -346,3 +340,33 @@ a {
     opacity: 2;
 }
 
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .music-player {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .cards-container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 150px;
+    }
+
+    .hide {
+        display: none;
+    }
+}
